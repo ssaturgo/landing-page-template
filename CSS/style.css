@@ -1,14 +1,15 @@
 :root{
     --main-color: black;
-    --accent-color: yellow;
-    --button-color: #3163b3;
-    --text-color-dark: white;
+    --accent-color: #3b82f6;
+    --text-color-solid: white;
     --text-color-light: black;
-    --background-color-dark: #1f2937;
+    --background-color-solid: #1f2937;
     --background-color-light: #ffffff;
     --background-color-gray: #e5e7eb;
 
-    --section-size: 500px;
+    --section-size: 400px;
+    --contact-size: 300px;
+    --credits-size: 1rem;
 }
 
 * {
@@ -17,7 +18,7 @@
 
 body {
     margin: 0;
-    background-color: var(--background-color-dark);
+    background-color: var(--background-color-solid);
 }
 
 nav {
@@ -26,10 +27,10 @@ nav {
     padding: 0 2rem 0 2rem;
     max-width: 1000px;
     margin: 0 auto;
-    color: var(--text-color-dark);
+    color: var(--text-color-solid);
 }
 
-nav ul {
+nav ul{
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -39,13 +40,18 @@ nav li {
     list-style: none;
 }
 
+nav a {
+    color: var(--text-color-solid);
+    text-decoration: none;
+}
+
 #main-logo {
     display: flex;
 }
 
-.dark {
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
+.solid {
+    background-color: var(--background-color-solid);
+    color: var(--text-color-solid);
     max-width: 1000px;
 
 }
@@ -54,7 +60,7 @@ nav li {
     color: var(--text-color-light);
 }
 .button {
-    background-color: var(--button-color);
+    background-color: var(--accent-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +68,7 @@ nav li {
     height: 2rem;
     color: white;
     text-decoration: none;
-    border-radius: 1rem;
+    border-radius: 10px;
 }
 
 section {
@@ -70,14 +76,20 @@ section {
     margin: 0 auto;
     /*max-width: 1000px;*/
     height: var(--section-size);
+    padding: 2rem;
 }
 
-#about div{
+#about .content{
+    display: flex;
+    flex-direction: row;
+}
+
+#about .content div {
     width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
 }
 
 #about img {
@@ -91,9 +103,12 @@ section {
 }
 #features ul {
     display: flex;
-    justify-content: center;
     list-style: none;
-    gap: 10%;
+    justify-content: space-evenly;
+}
+
+#features li {
+    width: 150px;
 }
 
 .content {
@@ -108,9 +123,40 @@ section {
 
 #quote {
     background-color: var(--background-color-gray);
-    height: 300px;
+}
+
+#quote .content {
+    justify-content: center;
 }
 
 #quote p {
     text-align: right;
+}
+
+#contact {
+    height: var(--contact-size);
+    align-items: center;
+}
+
+#contact .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    color: var(--text-color-solid);
+}
+
+#contact .button {
+    border: 3px white solid;
+}
+
+#credits {
+    height: var(--credits-size);
+    color: var(--text-color-solid);
+    justify-content: center;
+    align-items: center;
 }
