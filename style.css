@@ -1,0 +1,116 @@
+:root{
+    --main-color: black;
+    --accent-color: yellow;
+    --button-color: #3163b3;
+    --text-color-dark: white;
+    --text-color-light: black;
+    --background-color-dark: #1f2937;
+    --background-color-light: #ffffff;
+    --background-color-gray: #e5e7eb;
+
+    --section-size: 500px;
+}
+
+* {
+    /*border: orange 1px solid;*/
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color-dark);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: var(--text-color-dark);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+nav li {
+    list-style: none;
+}
+
+#main-logo {
+    display: flex;
+}
+
+.dark {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+    max-width: 1000px;
+
+}
+.light {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+.button {
+    background-color: var(--button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+section {
+    display: flex;
+    margin: 0 auto;
+    /*max-width: 1000px;*/
+    height: var(--section-size);
+}
+
+#about div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#about img {
+    border-radius: 10px;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#features ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#quote {
+    background-color: var(--background-color-gray);
+    height: 300px;
+}
+
+#quote p {
+    text-align: right;
+}

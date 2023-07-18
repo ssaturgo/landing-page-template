@@ -1,77 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Title Here</title>
-        <link rel="stylesheet" href="./CSS/_common.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title Here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <body>
-        <nav id="header-nav">
-            <img src="./SVG/logo.svg" alt="">
-            <ul id="header-ul">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+<nav>
+    <a id="main-logo" href=""><img src="SVG/logo.svg"></a>
+    <ul>
+        <li>About</li>
+        <li>Features</li>
+        <li>Testimonials</li>
+        <li>Sign Up</li>
+    </ul>
+</nav>
+<section id="about" class="dark">
+    <div>
+        <h2>This website is awesome</h2>
+        <p>This website has some subtext that goes here under the main title.
+            It's a smaller font and the color is lower contrast</p>
+        <a href="" class="button">Sign Up</a>
+    </div>
+    <div>
+        <img src="https://placehold.co/360x240" alt="placeholder-img">
+    </div>
+</section>
 
-        <!-- First Block -->
-        <div class="container">
-            <div class="content-body">
-                <div class="child">
-                    <h2>This website is awesome</h2>
-                    <p>This website has some subtext that goes here under the main title.
-                        It's a smaller font and the color is lower contrast.</p>
-                        <a class="button" href="">Sign Up</a>
-                    </div>
-                <div class="child">
-                    <img src="./IMG/placeholder.png" alt="">
-                </div>
-            </div>
-        </div>
+<section id="features" class="light">
+    <div class="content">
+        <h2>Some random information</h2>
+        <ul>
+            <li>
+                <img src="https://placehold.co/150x150" alt="placeholder-img">
+                <p>this is some subtext under an illustration or image</p>
+            </li>
+            <li>
+                <img src="https://placehold.co/150x150" alt="placeholder-img">
+                <p>this is some subtext under an illustration or image</p>
+            </li>
+            <li>
+                <img src="https://placehold.co/150x150" alt="placeholder-img">
+                <p>this is some subtext under an illustration or image</p>
+            </li>
+            <li>
+                <img src="https://placehold.co/150x150" alt="placeholder-img">
+                <p>this is some subtext under an illustration or image</p>
+            </li>
+        </ul>
+    </div>
+</section>
 
-        <!-- Second Block -->
-        <div class="container solid">
-            <div class="content-body column">
-                <div class="child text-center">
-                    <h2>Some random information</h2>
-                </div>
-                <div class="list-row">
-                    <div class="block"><img src="./IMG/block.png"><p>this is some other subtext under an illustration or image</p></div>
-                    <div class="block"><img src="./IMG/block.png"><p>this is some other subtext under an illustration or image</p></div>
-                    <div class="block"><img src="./IMG/block.png"><p>this is some other subtext under an illustration or image</p></div>
-                    <div class="block"><img src="./IMG/block.png"><p>this is some other subtext under an illustration or image</p></div>
-                </div>
-            </div>
-        </div>
+<section id="quote">
+    <div class="content">
+        <h2>This is an inspiring quote, or a testimonial from a customer.
+            Maybe it's just filling up space, or maybe people will actually read it.
+            Who knows? All I know is that it looks nice.</h2>
+        <p>- Someone you trust</p>
+    </div>
+</section>
 
-        <!-- Third Block -->
-        <div class="container">
-            <div class="content-body column">
-                <div class="child text-center">
-                    <h2>This is an inspiring quote, or a testimonial from a customer.
-                        Maybe it's just filling up space, or maybe people will actually read it.
-                        Who knows? All I know is that it looks just fine.</h2>
-                </div>
-                <div><p class="text-align-right">- Someone you trust</p></div>
-            </div>
-        </div>
-
-        <!-- Third Block -->
-        <div class="container solid">
-            <div class="content-body column">
-                <div class="contact-body">
-                    <div class="contact-child">
-                        <h2>Call to action! It's time!</h2>
-                        <p>Sign up for our product by clicking that button right over there!</p>
-                    </div>
-                    <div class="contact-child">
-                        <a class="button " href="">Sign Up</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+</body>
 </html>
