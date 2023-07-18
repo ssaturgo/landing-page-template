@@ -1,7 +1,7 @@
 # landing-page-template
 a basic landing page template made with HTML & CSS.
 
-Live Demo
+[Live Demo](https://ssaturgo.github.io/landing-page-template/)
 
 # About
 This was a project I made while learning web development with the help of the Odin Project Curriculum.
