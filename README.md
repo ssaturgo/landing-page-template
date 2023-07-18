@@ -1,5 +1,6 @@
 # landing-page-template
 a basic landing page template made with HTML & CSS.
+
 Live Demo
 
 # About
@@ -9,5 +10,6 @@ I hope people can use this project to learn like I have learned from other peopl
 
 # Technology Used
 **Built with**
+
 HTML
 CSS
